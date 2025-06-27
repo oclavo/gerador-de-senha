@@ -40,7 +40,7 @@ geraSenha();
 
 function geraSenha() {
     let alfabeto = '';
- } if (checkbox[0].checked) {
+    if (checkbox[0].checked) {
         alfabeto = alfabeto + letrasMaiusculas;
     }
     if (checkbox[1].checked) {
@@ -62,14 +62,17 @@ function geraSenha() {
     campoSenha.value = senha;
     classificaSenha();
 forcaSenha.classList.remove('fraca','media','forte');
+
+}
+function classificaSenha(){
+forcaSenha.classList.remove('fraca','media','forte');
 if (tamanhoSenha > 11){
 forcaSenha.classList.add('forte');
 }
-else if (tamanhoSenha > 5 && tamanhoSenha < 12 )
- {
+else if (tamanhoSenha > 5 && tamanhoSenha < 12 ){
 forcaSenha.classList.add('media');
-} else if (tamanhoSenha <= 5){
 }
-function classificaSenha(){
-forcaSenha.classList.add('forte');
+else if (tamanhoSenha <= 5){
+forcaSenha.classList.add('fraca');
+}
 }
