@@ -40,7 +40,7 @@ geraSenha();
 
 function geraSenha() {
     let alfabeto = '';
-    if (checkbox[0].checked) {
+ } if (checkbox[0].checked) {
         alfabeto = alfabeto + letrasMaiusculas;
     }
     if (checkbox[1].checked) {
@@ -68,9 +68,8 @@ forcaSenha.classList.add('forte');
 else if (tamanhoSenha > 5 && tamanhoSenha < 12 )
  {
 forcaSenha.classList.add('media');
-}
+} else if (tamanhoSenha <= 5){
 }
 function classificaSenha(){
-} else if (tamanhoSenha <= 5){
-forcaSenha.classList.add('fraca');
+forcaSenha.classList.add('forte');
 }
