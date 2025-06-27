@@ -60,8 +60,10 @@ function geraSenha() {
         senha = senha + alfabeto[numeroAleatorio];
     }
     campoSenha.value = senha;
+    classificaSenha();
+forcaSenha.classList.remove('fraca','media','forte');
+
 }
 function classificaSenha(){
 forcaSenha.classList.add('forte');
-
 }
